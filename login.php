@@ -2,7 +2,7 @@
 $usr1=$_GET['user'];
 $pas1=$_GET['pass'];
 $arra=array();
-$handle = fopen("data/ids.txt", "r");
+$handle = fopen("ids.txt", "r");
  if ($handle) {while (($line = fgets($handle)) !== false) {
 $text="".$line;$text=trim($text); $arra[] ="$text";}fclose($handle);}
 foreach($arra as $va){
